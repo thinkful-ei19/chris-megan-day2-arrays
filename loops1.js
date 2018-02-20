@@ -1,27 +1,27 @@
 function max(numbers) {
-   let maxArray=[numbers];
-   let maxNum = 0;
-    let i=0
-    while(i<maxArray.length){
-        if (maxArray[i]>maxNum){
-            maxNum = maxArray[i];
+   let maxNum = numbers[0];
+   let i=0;
+    while(i<numbers.length){
+        if (numbers[i]>maxNum){
+            maxNum = numbers[i];
+        }
             i++;
         }
-    }
-    return maxNum
+    
+    return maxNum;
 }
   
 function min(numbers) {
-    let minArray=[numbers];
-    let minNum = minArray[0];
-     let i=0;
-     while(i<minArray.length){
-         if (minArray[i]<minNum){
-             minNum = minArray[i];
+    let minNum = numbers[0];
+    let i=0;
+     while(i<numbers.length){
+         if (numbers[i]<minNum){
+             minNum = numbers[i];
+         }
              i++;
          }
-     }
-     return minNum
+     
+     return minNum;
 }
   
 
